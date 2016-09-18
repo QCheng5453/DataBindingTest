@@ -24,4 +24,9 @@ public class Presenter {
         Toast.makeText(context,"onClicked show name " + user.getName(),Toast.LENGTH_SHORT).show();
 
     }
+
+    public void onClickIsMale(View view, User user) {
+        Context context = view.getContext();
+        Toast.makeText(context,"onClicked show name " + user.getName(),Toast.LENGTH_SHORT).show();
+    }
 }

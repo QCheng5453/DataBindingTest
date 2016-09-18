@@ -11,8 +11,25 @@ package com.eureka.databindingtest.data;
  **/
 
 public class User {
-    public String name;
-    public String age;
+    private String name;
+    private String age;
+
+    public boolean isMale() {
+        return isMale;
+    }
+
+    public void setMale(boolean male) {
+        isMale = male;
+    }
+
+    public User(String name, String age, boolean isMale) {
+        this.name = name;
+        this.age = age;
+        this.isMale = isMale;
+    }
+
+    private boolean isMale;
+
 
     public User(String name, String age) {
         this.name = name;
